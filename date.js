@@ -1,5 +1,5 @@
 exports.getDate = function(){  
-   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+   const options = { weekday: 'long', year: 'numeric', day: 'numeric' };
     const today = new Date();
     const Currentday = today.toLocaleDateString("en-US", options);
      return  Currentday;

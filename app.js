@@ -11,7 +11,7 @@ app.use(express.static("public"))
 const _ = require("lodash")
 //Own Module
 const date = require(__dirname+"/date.js")
-const Currentday = date.getDay()
+const Currentday = date.getDate()
 
 
 //Mongoose code
