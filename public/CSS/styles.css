@@ -1,0 +1,112 @@
+html {
+   background-color: #E4E9FD; 
+  background-image: -webkit-linear-gradient(65deg, #7a86b5 50%, #E4E9FD 50%, #E4E9FD 50%);
+  min-height: 1000px;
+  /* background-color: #7a86b5; */
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #16eee3;
+   padding: 10px; 
+   font-family: 'Cairo', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 5000;
+   font-size: 45px;
+}
+
+.box {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #1F2833;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #1F2833;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center; 
+   border-bottom: 1px solid rgb(10, 3, 3);
+   word-wrap: break-word;
+}
+
+/* apply to the last child of the div item */
+
+.item:last-child {
+  /* border-bottom: 0; */
+}
+
+/* when click checkbox color full line on task */
+input:checked+p{
+   text-decoration: line-through;
+  text-decoration-color:#66FCF1;
+}
+
+/* format to apply to any specific attribute :  here applied to type:checkbox */
+input[type="checkbox"] {
+  margin: 20px;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #66FCF1;
+  /* word-wrap: break-word; */
+ 
+}
+
+form.item{
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #66FCF1;
+  color: #45A29E;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+   border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  color: #66FCF1;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #66FCF1;
+}
+
+/* this is called SUDO selector : target the placeholder */
+::placeholder {
+  color: #45A29E;
+  opacity: 1;
+
+}
+
+ footer {
+  color: #c5c6c7;
+  text-align: center;
+}
