@@ -60,7 +60,8 @@ app.get("/",function(req,res){
       console.log(err)
     }
     else{
-      console.log("successfully added to the database")}
+      console.log("successfully added to the database")
+      res.redirect("/")}
     } 
     )}
     else{
