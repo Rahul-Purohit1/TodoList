@@ -62,7 +62,7 @@ app.get("/",function(req,res){
     else{
       console.log("successfully added to the database")
       res.redirect("/")}
-    } 
+    }  
     )}
     else{
       
